@@ -34,9 +34,10 @@
                                     </div>
                                     <div class="modal-dialog modal-dialog-scrollable textForm">
                                         <div class="mb-4">
-                                            <img src="assets/img/portfolio/desinfec/FONDO_2.jpg" width="300" height="150" alt="5" >
+                                            <img src="assets/img/portfolio/desinfec/FONDO_2.jpg" width="300" height="150"
+                                                alt="5">
                                         </div>
-                                    
+
                                         <p>
                                             Nuestro equipo trabaja con vapor (95% Seco) la alta temperatura del vapor
                                             (180°C)
@@ -77,7 +78,8 @@
                             objetivo principal de la convervacion a través de la reparación, mantenimiento y
                             mejoramiento de equipos.</p>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalDos">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalDos">
                             Más info
                         </button>
 
@@ -87,22 +89,23 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Servicios de mantenimiento de aires acondicionados</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Servicios de mantenimiento de
+                                            aires acondicionados</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-dialog modal-dialog-scrollable textForm">
                                         <div class="mb-4">
-                                        <img src="assets/img/portfolio/desinfec/FONDO_3.jpg" width="300" height="150">
-                                    </div>
-                                        <p >
+                                            <img src="assets/img/portfolio/desinfec/FONDO_3.jpg" width="300" height="150">
+                                        </div>
+                                        <p>
                                             El mantenimiento significa la protección de la inversión, la garantía de la
                                             producción la
                                             seguridad de un servicio y obedece a una planificación adecuada. </p>
-                                     
-                                        <p >
+
+                                        <p>
                                             Somos centro de servicio autorizado de TRANE, LG, SAMSUNG, DAIKIN. </p>
-                                      
+
                                         <p>
                                             Nuestro equipo de luz ultravioleta tiene un efecto germicida que se extiende a
                                             bacterias, virus, esporas, hongos, mohos y ácaros: el mismo se debe al efecto
@@ -127,9 +130,11 @@
                         <div class="mb-2 misionImg"> </div>
 
                         <h3 class="h4 mb-2">Servicios de jardinería (poda de zonas verdes).</h3>
-                        <p class="text-muted mb-0 textMision"> Colocación, control, programación y revisión de los sistemas de riego </p>
+                        <p class="text-muted mb-0 textMision"> Colocación, control, programación y revisión de los sistemas
+                            de riego </p>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalTres">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalTres">
                             Más info
                         </button>
 
@@ -139,19 +144,22 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Servicios de jardinería (poda de zonas verdes).</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Servicios de jardinería (poda de
+                                            zonas verdes).</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-dialog modal-dialog-scrollable textForm">
                                         <div class="mb-4">
-                                        <img src="assets/img/portfolio/desinfec/FONDO_4.jpg" width="300" height="250">
+                                            <img src="assets/img/portfolio/desinfec/FONDO_4.jpg" width="300" height="250">
                                         </div>
                                         <p>
                                             Poda de plantas, arbustos, árboles y palmeras. Eliminación de las malas hierbas.
                                         </p>
                                         <p>
-                                            Realización del tratamiento fitosanitario. Se trata de un método basado en la aplicación de una sustancia que previene o destruye los insectos, ácaros, hongos o bacterias -entre otro tipo de plagas- que afecta a la vida vegetal.
+                                            Realización del tratamiento fitosanitario. Se trata de un método basado en la
+                                            aplicación de una sustancia que previene o destruye los insectos, ácaros, hongos
+                                            o bacterias -entre otro tipo de plagas- que afecta a la vida vegetal.
                                         </p>
                                         <p>
                                             Abonado que garantice un crecimiento sano y adecuado de todas las plantas.
@@ -160,7 +168,7 @@
                                             Instalación, reparación y supervisión de césped artificial.
                                         </p>
                                         <p>
-                                            Siega del césped como ejemplo perfecto del servicio de jardinería. 
+                                            Siega del césped como ejemplo perfecto del servicio de jardinería.
                                         </p>
                                     </div>
                                     <div class="modal-footer">
@@ -188,66 +196,65 @@
 @endsection
 
 @section('form')
-
-<form action="{{ route('mail.store') }}" id="contactForm" data-sb-form-api-token="API_TOKEN" method="POST" enctype="multipart/form-data">
-    @csrf
-    <!-- Name input-->
-    <div class="form-floating mb-3 textForm">
-        <input class="form-control" id="name" name="name" type="text" placeholder="Ingresa el nombre..."
-            data-sb-validations="required" />
-        <label for="name">Nombre</label>
-        <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido</div>
-    </div>
-    <!-- Email address input-->
-    <div class="form-floating mb-3 textForm">
-        <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com"
-            data-sb-validations="required,email" />
-        <label for="email">Correo</label>
-        <div class="invalid-feedback" data-sb-feedback="email:required">El correo es requerido</div>
-        <div class="invalid-feedback" data-sb-feedback="email:email">Correo no valido</div>
-    </div>
-    <!-- Phone number input-->
-    <div class="form-floating mb-3 textForm">
-        <input class="form-control" id="phone" name="telefono" type="tel" placeholder="(123) 456-7890"
-            data-sb-validations="required" />
-        <label for="phone">Telefono</label>
-        <div class="invalid-feedback" data-sb-feedback="phone:required">Es requerido el telefono
+    <form action="{{ route('mail.store') }}" id="contactForm" data-sb-form-api-token="API_TOKEN" method="POST"
+        enctype="multipart/form-data">
+        @csrf
+        <!-- Name input-->
+        <div class="form-floating mb-3 textForm">
+            <input class="form-control" id="name" name="name" type="text" placeholder="Ingresa el nombre..."
+                data-sb-validations="required" />
+            <label for="name">Nombre</label>
+            <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido</div>
         </div>
-    </div>
-    <!-- Message input-->
-    <div class="form-floating mb-3 textForm">
-        <textarea name="descripcion" class="form-control" id="message" type="text" placeholder="Enter your message here..."
-            style="height: 10rem" data-sb-validations="required"></textarea>
-        <label for="message" >Mensaje</label>
-        <div class="invalid-feedback" data-sb-feedback="message:required">El mensaje es necesario</div>
-      
-    </div>
-    <div class="d-grid mb-5">
-       
-        <button type="submit" class="btn btn-primary btn-xl disabled" id="submitButton">
-            Enviar
-    </button>
-    </div>
-    <!-- Submit success message-->
-    <!---->
-    <!-- This is what your users will see when the form-->
-    <!-- has successfully submitted-->
-    <div class="d-none" id="submitSuccessMessage">
-        <div class="text-center mb-3">
-            <div class="fw-bolder textForm">Datos enviados
-            <br />
+        <!-- Email address input-->
+        <div class="form-floating mb-3 textForm">
+            <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com"
+                data-sb-validations="required,email" />
+            <label for="email">Correo</label>
+            <div class="invalid-feedback" data-sb-feedback="email:required">El correo es requerido</div>
+            <div class="invalid-feedback" data-sb-feedback="email:email">Correo no valido</div>
         </div>
-    </div>
-    <!-- Submit error message-->
-    <!---->
-    <!-- This is what your users will see when there is-->
-    <!-- an error submitting the form-->
-    <div class="d-none" id="submitErrorMessage">
-        <div class="text-center text-danger mb-3">No se pudo enviar el mensaje</div>
-    </div>
-    <!-- Submit Button-->
-  
-  
-</form>
+        <!-- Phone number input-->
+        <div class="form-floating mb-3 textForm">
+            <input class="form-control" id="phone" name="telefono" type="tel" placeholder="(123) 456-7890"
+                data-sb-validations="required" />
+            <label for="phone">Telefono</label>
+            <div class="invalid-feedback" data-sb-feedback="phone:required">Es requerido el telefono
+            </div>
+        </div>
+        <!-- Message input-->
+        <div class="form-floating mb-3 textForm">
+            <textarea name="descripcion" class="form-control" id="message" type="text" placeholder="Enter your message here..."
+                style="height: 10rem" data-sb-validations="required"></textarea>
+            <label for="message">Mensaje</label>
+            <div class="invalid-feedback" data-sb-feedback="message:required">El mensaje es necesario</div>
 
+        </div>
+        <div class="d-grid mb-5">
+
+            <button type="submit" class="btn btn-primary btn-xl disabled" id="submitButton">
+                Enviar
+            </button>
+        </div>
+        <!-- Submit success message-->
+        <!---->
+        <!-- This is what your users will see when the form-->
+        <!-- has successfully submitted-->
+        <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center mb-3">
+                <div class="fw-bolder textForm">Datos enviados
+                    <br />
+                </div>
+            </div>
+            <!-- Submit error message-->
+            <!---->
+            <!-- This is what your users will see when there is-->
+            <!-- an error submitting the form-->
+            <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">No se pudo enviar el mensaje</div>
+            </div>
+            <!-- Submit Button-->
+
+
+    </form>
 @endsection
