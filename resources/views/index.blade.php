@@ -48,7 +48,7 @@
         <div class="container px-4 px-lg-5 h-100">
             <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                 <div class="col-lg-8 align-self-end">
-                    <img src="assets/img/andina_logo.png" width="340" height="145" alt="">
+                    <img src="assets/img/andina_life.png" width="340" height="145" alt="">
                     <hr class="divider" />
                 </div>
                 <div class="col-lg-8 align-self-baseline">

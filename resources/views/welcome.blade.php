@@ -230,7 +230,7 @@
             <div class="invalid-feedback" data-sb-feedback="message:required">El mensaje es necesario</div>
 
         </div>
-        <div class="d-grid mb-5">
+        <div class="d-grid mb-2">
 
             <button type="submit" class="btn btn-primary btn-xl disabled" id="submitButton">
                 Enviar
