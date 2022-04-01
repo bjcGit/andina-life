@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\homeController;
 use App\Http\Controllers\MailController;
 
 
@@ -20,5 +20,5 @@ use App\Http\Controllers\MailController;
 //     return view('welcome');
     
 // });
-Route::get('', [HomeController::class, 'index'])->name('home');
+Route::get('', [homeController::class, 'index'])->name('home');
 Route::resource('mail', MailController::class) ->names('mail');
