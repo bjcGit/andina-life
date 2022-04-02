@@ -26,7 +26,7 @@
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog">
-                                <div class="modal-content">
+                                <div class="modal-content" style="padding: 3px">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Servicios de desinfección</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -98,7 +98,7 @@
                                         <div class="mb-4">
                                             <img src="assets/img/portfolio/desinfec/FONDO_3.jpg" width="300" height="150">
                                         </div>
-                                        <p>
+                                        <p style="padding: 3px ">
                                             El mantenimiento significa la protección de la inversión, la garantía de la
                                             producción la
                                             seguridad de un servicio y obedece a una planificación adecuada. </p>
@@ -113,7 +113,17 @@
                                             contribuye a
                                             dañar su aparato reproductor, impidiendo su crecimiento y multiplicación.
                                         </p>
-                                        <img src="assets/img/portfolio/desinfec/aires.jpg" width="400" height="250">
+                                      
+                                            <img src="assets/img/portfolio/desinfec/cassette.png" width="400" height="250">
+                                            <img src="assets/img/portfolio/desinfec/equipo_tipo_paquete.png" width="400" height="250">
+                                            <img src="assets/img/portfolio/desinfec/mini_split.png" width="400" height="250">
+                                            <img src="assets/img/portfolio/desinfec/multi_inverter.png" width="400" height="250">
+                                            <img src="assets/img/portfolio/desinfec/piso_techo.png" width="400" height="250">
+                                            <img src="assets/img/portfolio/desinfec/sistema_chiller.png" width="400" height="250">
+                                            <img src="assets/img/portfolio/desinfec/sistema_refrigerante.png" width="400" height="250">
+                                            <img src="assets/img/portfolio/desinfec/split.png" width="400" height="250">
+                                  
+                                        
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
