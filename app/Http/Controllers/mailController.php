@@ -59,10 +59,10 @@ class mailController extends Controller
             'usuario' => 'Usuario: ' . $request['email']
 
         ];
-
+        
         Mail::to($request['email'])->send(new \App\Mail\MyUserMail($details));
-
-        return redirect()->route('users.index');
+        
+        return redirect()->route('users.home');
     }
 
     /**

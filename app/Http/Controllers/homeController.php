@@ -36,7 +36,7 @@ class homeController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
         //
         // $details = [    
         //     'title' => 'Bienvenido '.$request['name'].' '.$request['lastname'],    

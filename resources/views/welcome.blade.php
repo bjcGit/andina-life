@@ -219,7 +219,7 @@
                         <div class="input-group-prepend">
                             <h5 class="" style=" margin-top: 8px; margin-left: 10px">Nombre completo</h5>
                         </div>
-                        <input type="text" style="margin-bottom: 10px" class="form-control"
+                        <input type="text" style="margin-bottom: 10px" class="form-control textForm"
                         placeholder="Ingresa el nombre..." name="name" required>
                         @error('name')
                             <span class="text-danger">{{ $message }}</span>
@@ -228,9 +228,9 @@
 
                     <div class=" col-sm-12">
                         <div class="input-group-prepend">
-                            <h5 class="" style=" margin-top: 8px; margin-left: 10px">Correo electrónico</h5>
+                            <h5 class="textForm" style=" margin-top: 8px; margin-left: 10px">Correo electrónico</h5>
                         </div>
-                        <input type="text" style="margin-bottom: 10px" class="form-control"
+                        <input type="text" style="margin-bottom: 10px" class="form-control textForm"
                             placeholder="name@example.com" name="email"
                             required>
                         @error('email')
@@ -240,9 +240,9 @@
 
                     <div class=" col-sm-12">
                         <div class="input-group-prepend">
-                            <h5 class="" style=" margin-top: 8px; margin-left: 10px">Teléfono</h5>
+                            <h5 class="textForm" style=" margin-top: 8px; margin-left: 10px">Teléfono</h5>
                         </div>
-                        <input type="text" style="margin-bottom: 10px" class="form-control"
+                        <input type="text" style="margin-bottom: 10px" class="form-control textForm"
                         placeholder="(123) 456-7890" name="phone" required>
                         @error('phone')
                             <span class="text-danger">{{ $message }}</span>
@@ -250,10 +250,10 @@
                     </div>
 
                     <div class=" col-sm-12">
-                        <div class="input-group-prepend">
+                        <div class="input-group-prepend textForm">
                             <h5 style=" font-weigth:10; width: 400px; margin-top: 8px; margin-left: 10px">Mensaje</h5>
                         </div>
-                        <textarea class="form-control" name="message" rows="3" placeholder="Introduzca su mensaje aquí..."></textarea>
+                        <textarea class="form-control textForm" name="message" rows="3" placeholder="Introduzca su mensaje aquí..."></textarea>
                         @error('message')
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
@@ -264,8 +264,8 @@
 
             <div class="card-footer text-muted">
                 <div class="row">
-                    <div class="col-md-3 col-sm-3 col-6">
-                        <button type="submit" class='btn btn-block btn-primary btn-md'>Enviar</button>
+                    <div class="d-grid mb-2">
+                        <button type="submit" class="btn btn-primary btn-xl">Enviar</button>
                     </div>
                 </div>
             </div>
