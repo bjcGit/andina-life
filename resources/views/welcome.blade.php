@@ -217,7 +217,7 @@
                 <div class="row">
                     <div class=" col-sm-12">
                         <div class="input-group-prepend">
-                            <h5 class="" style=" margin-top: 8px; margin-left: 10px">Nombre completo</h5>
+                            <h5 class="" style=" margin-top: 8px; margin-left: 10px">Nombre completo o empresa</h5>
                         </div>
                         <input type="text" style="margin-bottom: 10px" class="form-control textForm"
                         placeholder="Ingresa el nombre..." name="name" required>
@@ -240,10 +240,10 @@
 
                     <div class=" col-sm-12">
                         <div class="input-group-prepend">
-                            <h5 class="textForm" style=" margin-top: 8px; margin-left: 10px">Teléfono</h5>
+                            <h5 class="textForm" style=" margin-top: 8px; margin-left: 10px">Teléfono movil o linea fija</h5>
                         </div>
                         <input type="text" style="margin-bottom: 10px" class="form-control textForm"
-                        placeholder="(123) 456-7890" name="phone" required>
+                        placeholder="3234567890 o 3274545" name="phone" required>
                         @error('phone')
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
@@ -251,9 +251,9 @@
 
                     <div class=" col-sm-12">
                         <div class="input-group-prepend textForm">
-                            <h5 style=" font-weigth:10; width: 400px; margin-top: 8px; margin-left: 10px">Mensaje</h5>
+                            <h5 style=" font-weigth:10; width: 400px; margin-top: 8px; margin-left: 10px">Servicios que deseas cotizar</h5>
                         </div>
-                        <textarea class="form-control textForm" name="message" rows="3" placeholder="Introduzca su mensaje aquí..."></textarea>
+                        <textarea class="form-control textForm" name="message" rows="3" placeholder="Servicios"></textarea>
                         @error('message')
                             <span class="text-danger">{{ $message }}</span>
                         @enderror
