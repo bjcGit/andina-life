@@ -113,17 +113,21 @@
                                             contribuye a
                                             dañar su aparato reproductor, impidiendo su crecimiento y multiplicación.
                                         </p>
-                                      
-                                            <img src="assets/img/portfolio/desinfec/cassette.png" width="400" height="250">
-                                            <img src="assets/img/portfolio/desinfec/equipo_tipo_paquete.png" width="400" height="250">
-                                            <img src="assets/img/portfolio/desinfec/mini_split.png" width="400" height="250">
-                                            <img src="assets/img/portfolio/desinfec/multi_inverter.png" width="400" height="250">
-                                            <img src="assets/img/portfolio/desinfec/piso_techo.png" width="400" height="250">
-                                            <img src="assets/img/portfolio/desinfec/sistema_chiller.png" width="400" height="250">
-                                            <img src="assets/img/portfolio/desinfec/sistema_refrigerante.png" width="400" height="250">
-                                            <img src="assets/img/portfolio/desinfec/split.png" width="400" height="250">
-                                  
-                                        
+
+                                        <img src="assets/img/portfolio/desinfec/cassette.png" width="400" height="250">
+                                        <img src="assets/img/portfolio/desinfec/equipo_tipo_paquete.png" width="400"
+                                            height="250">
+                                        <img src="assets/img/portfolio/desinfec/mini_split.png" width="400" height="250">
+                                        <img src="assets/img/portfolio/desinfec/multi_inverter.png" width="400"
+                                            height="250">
+                                        <img src="assets/img/portfolio/desinfec/piso_techo.png" width="400" height="250">
+                                        <img src="assets/img/portfolio/desinfec/sistema_chiller.png" width="400"
+                                            height="250">
+                                        <img src="assets/img/portfolio/desinfec/sistema_refrigerante.png" width="400"
+                                            height="250">
+                                        <img src="assets/img/portfolio/desinfec/split.png" width="400" height="250">
+
+
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
@@ -206,10 +210,69 @@
 @endsection
 
 @section('form')
-    <form action="{{ route('mail.store') }}" id="contactForm" data-sb-form-api-token="API_TOKEN" method="POST"
-        enctype="multipart/form-data">
-        @csrf
-        <!-- Name input-->
+    <div class="card">
+        <form action="{{ route('mail.store') }}" method="POST" enctype="multipart/form-data">
+            @csrf
+            <div class="card-body">
+                <div class="row">
+                    <div class=" col-sm-12">
+                        <div class="input-group-prepend">
+                            <h5 class="" style=" margin-top: 8px; margin-left: 10px">Nombre completo</h5>
+                        </div>
+                        <input type="text" style="margin-bottom: 10px" class="form-control"
+                        placeholder="Ingresa el nombre..." name="name" required>
+                        @error('name')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
+
+                    <div class=" col-sm-12">
+                        <div class="input-group-prepend">
+                            <h5 class="" style=" margin-top: 8px; margin-left: 10px">Correo electrónico</h5>
+                        </div>
+                        <input type="text" style="margin-bottom: 10px" class="form-control"
+                            placeholder="name@example.com" name="email"
+                            required>
+                        @error('email')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
+
+                    <div class=" col-sm-12">
+                        <div class="input-group-prepend">
+                            <h5 class="" style=" margin-top: 8px; margin-left: 10px">Teléfono</h5>
+                        </div>
+                        <input type="text" style="margin-bottom: 10px" class="form-control"
+                        placeholder="(123) 456-7890" name="phone" required>
+                        @error('phone')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
+
+                    <div class=" col-sm-12">
+                        <div class="input-group-prepend">
+                            <h5 style=" font-weigth:10; width: 400px; margin-top: 8px; margin-left: 10px">Mensaje</h5>
+                        </div>
+                        <textarea class="form-control" name="message" rows="3" placeholder="Introduzca su mensaje aquí..."></textarea>
+                        @error('message')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card-footer text-muted">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-6">
+                        <button type="submit" class='btn btn-block btn-primary btn-md'>Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    {{-- <!-- Name input-->
         <div class="form-floating mb-3 textForm">
             <input class="form-control" id="name" name="name" type="text" placeholder="Ingresa el nombre..."
                 data-sb-validations="required" />
@@ -252,9 +315,7 @@
         <!-- has successfully submitted-->
         <div class="d-none" id="submitSuccessMessage">
             <div class="text-center mb-3">
-                <div class="fw-bolder textForm">Datos enviados
-                    <br />
-                </div>
+                <div class="fw-bolder textForm">Datos enviados</div>
             </div>
             <!-- Submit error message-->
             <!---->
@@ -264,7 +325,5 @@
                 <div class="text-center text-danger mb-3">No se pudo enviar el mensaje</div>
             </div>
             <!-- Submit Button-->
-
-
-    </form>
+        </div> --}}
 @endsection
