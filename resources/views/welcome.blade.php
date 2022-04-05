@@ -255,7 +255,7 @@
                         </div>
                         <textarea class="form-control textForm" name="message" rows="3" placeholder="Servicios"></textarea>
                         @error('message')
-                            <span class="text-danger">{{ $message }}</span>
+                            <span class="text-danger textForm">{{ $message }}</span>
                         @enderror
                     </div>
 

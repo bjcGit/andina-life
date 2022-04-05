@@ -49,11 +49,14 @@ class mailController extends Controller
         ]);
 
         $details = [
-            'title' => 'Bienvenido ' . $request->name,
-            'body' => $request->message
+            'title' => 'Remitente ' . $request->name,
+            'body' => $request->message,
+            'email' =>$request->email,
+            'phone' =>$request->phone,
+            'name' =>$request->name,
         ];
         
-        Mail::to($request['email'])->send(new \App\Mail\MyUserMail($details));
+        Mail::to('comercial@andinalife.com')->send(new \App\Mail\MyUserMail($details));
         
         return redirect()->route('home');
     }

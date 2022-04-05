@@ -216,7 +216,7 @@
 <body>
     <!-- Wrapper/Container Table: Use a wrapper table to control the width and the background color consistently of your email. Use this approach instead of setting attributes on the body tag. -->
     <table cellpadding="0" width="100%" cellspacing="0" border="0" id="backgroundTable" class='bgBody' 
-    style="background-color:#3697D8;">
+    style="background-color:#20c997;">
         <tr>
             <td>
                 <table cellpadding="0" width="620" class="container" align="center" cellspacing="0" border="0">
@@ -238,12 +238,12 @@
                                                 <tr>
                                                     <td width="200" valign="top">&nbsp;</td>
                                                     <td width="200" valign="top" align="center">
-                                                        <div class="contentEditableContainer contentImageEditable">
+                                                        {{-- <div class="contentEditableContainer contentImageEditable">
                                                             <div class="contentEditable" align='center'>
                                                                 <img src="http://50.16.75.165:3000/logoVita.jpeg" width="200" height="170"
                                                                     alt='Logo' data-default="placeholder" />
                                                             </div>
-                                                        </div>
+                                                        </div> --}}
                                                     </td>
                                                     <td width="200" valign="top">&nbsp;</td>
                                                 </tr>
@@ -277,18 +277,29 @@
                                                                     {{ $details['body'] }}
                                                                 </p>
                                                             </div>
+                                                            <div class="contentEditable" align='left'>
+                                                                <p>
+                                                                    {{ $details['email'] }}
+                                                                </p>
+                                                                <p>
+                                                                    {{ $details['phone'] }}
+                                                                </p>
+                                                                <p>
+                                                                    {{ $details['name'] }}
+                                                                </p>
+                                                            </div>
                                                         </div>
                                                     </td>
                                                     <td width="100">&nbsp;</td>
                                                 </tr>
                                             </table>
-                                            <table cellpadding="0" cellspacing="0" border="0" align="center" width="600" class="container">
+                                            {{-- <table cellpadding="0" cellspacing="0" border="0" align="center" width="600" class="container">
                                                 <tr>
                                                     <td width="200">&nbsp;</td>
                                                     <td width="200" align="center" style="padding-top:25px;">
-                                                        <table cellpadding="0" cellspacing="0" border="0" align="center" width="200" height="50">
+                                                        {{-- <table cellpadding="0" cellspacing="0" border="0" align="center" width="200" height="50">
                                                             <tr>
-                                                                <td bgcolor="#3697D8" align="center" style="border-radius:4px;" width="200" height="50">
+                                                                <td bgcolor="#20c997" align="center" style="border-radius:4px;" width="200" height="50">
                                                                     <div class="contentEditableContainer contentTextEditable">
                                                                         <div class="contentEditable" align='center' >
                                                                               <a target='_blank' href="http://50.16.75.165/login" class='link2'>Ir al portal</a>
@@ -296,12 +307,12 @@
                                                                       </div>
                                                                 </td>
                                                             </tr>
-                                                        </table>
+                                                        </table> --}}
                                                     </td>
                                                     <td width="200">&nbsp;</td>
                                                 </tr>
-                                            </table>
-                                            <table cellpadding="0" cellspacing="0" border="0" align="center" width="600"
+                                            </table> 
+                                            {{-- <table cellpadding="0" cellspacing="0" border="0" align="center" width="600"
                                                 class="container">                                                
                                                 <tr>
 													<td width="100">&nbsp;</td>
@@ -333,7 +344,7 @@
 													</td>
 													<td width="100">&nbsp;</td>
 												</tr>
-                                            </table>
+                                            </table> --}}
                                         </div>
 
                                     </td>
