@@ -281,21 +281,6 @@
                                                     </td>
                                                     <td width="100">&nbsp;</td>
                                                 </tr>
-                                                <tr>
-                                                    <td width="100">&nbsp;</td>
-                                                    <td width="400" align="center">
-                                                        <div class="contentEditableContainer contentTextEditable">
-                                                            <div class="contentEditable" align='left'>
-                                                                <p>
-                                                                    {{ $details['usuario'] }}
-                                                                    <br>
-                                                                    {{ $details['otro'] }}
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td width="100">&nbsp;</td>
-                                                </tr>
                                             </table>
                                             <table cellpadding="0" cellspacing="0" border="0" align="center" width="600" class="container">
                                                 <tr>

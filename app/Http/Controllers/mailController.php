@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class mailController extends Controller
 {
@@ -34,35 +35,27 @@ class mailController extends Controller
      */
     public function store(Request $request)
     {
-        //
         $request->validate([
-            'name' => ['required', 'alpha', 'max:255'],
+            'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255'],
             'phone' => 'required',
             'message' => 'required',
         ], [
             'name.required' => 'El nombre es requerido',
             'email.required' => 'El servicio es obligatorio',
-            'name.alpha' => 'El nombre solo deben ser letras',
             'email.email' => 'Correo no valido',
             'phone' => 'Es requerido el teléfono',
             'message' => 'El mensaje es necesario',
         ]);
 
-        dd($request->all());
         $details = [
             'title' => 'Bienvenido ' . $request->name,
-            'body' => 'Oficialmente ya eres parte de Vita Salud IPS. Queremos informarte que ingresamos todos 
-            tus datos en nuestro sistema. Ahora puedes empezar a realizar todas las acciones necesarias
-            de acuerdo a tu rol en nuestro sistema. Tus credenciales para ingresar al portal son
-            los siguientes: ',
-            'usuario' => 'Usuario: ' . $request['email']
-
+            'body' => $request->message
         ];
         
         Mail::to($request['email'])->send(new \App\Mail\MyUserMail($details));
         
-        return redirect()->route('users.home');
+        return redirect()->route('home');
     }
 
     /**
